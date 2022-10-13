@@ -28,6 +28,32 @@ nav {
   text-align: center;
   width: 250px;
 }
+nav::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+nav::-webkit-scrollbar:vertical {
+  width:10px;
+}
+
+nav::-webkit-scrollbar-button:increment,nav::-webkit-scrollbar-button {
+  display: none;
+} 
+
+nav::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+nav::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+nav::-webkit-scrollbar-track {
+  border-radius: 10px;  
+}
+
 nav ul {
   align-items: center;
   display: flex;
